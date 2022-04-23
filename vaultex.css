@@ -1,8 +1,41 @@
-body {
-    background-color: white;
-    color: rgba(00, 00, 00, 0.5);
+/* * {
+    margin: 0;
+    padding: 0;
+}*/
+ 
+:root {
+    --primary-color: #fff;
+    --secondary-color: rgba(00, 00, 00, 0.5);
+    --border-primary: rgba(0, 0, 0, 0.9);
+ }
+
+.dark-mode {
+    --primary-color: rgba(0, 0, 0, 0.7);
+    --secondary-color: #fff;
+    --border-primary: rgba(179, 0, 0, 0.9);
+  }
+
+  body {
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
 }
 
+
+#lightBulb {
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    float: right;
+    margin-top: -2.4rem;
+    max-width:unset;
+max-height:unset;
+margin-left: unset;
+margin-right: auto;
+background-color:transparent;
+border:unset;
+border-radius: unset;
+padding-left: unset;
+}
 
 .top-header{ /* header link*/
     background-color: rgba(00, 00, 00, 0.3);
@@ -75,7 +108,7 @@ a:active {
 .thinBlackBorder { /* thin borderline*/
     border-style: solid;
     border-width: 0px 0px 1px;
-    border-color: rgba(00, 00, 00, 0.9);
+    border-color: var(--border-primary);
 }
 
 .vaultG {
@@ -287,8 +320,9 @@ footer {
         background-color:inherit;
         color: #FFF;
         padding: 0px;
-        border-radius: 45%;
         border: none;
     }
     .mySlides {display:none;}/* Doesn't seem to be necessary as code works fine without-- but just leave in good practice*/
     .mySlides0 {display:none;}
+
+    
