@@ -1,10 +1,18 @@
 // DarkMode feature
-//function myFunction() {
-  //alert("Works!");
-  //var element = document.body;
-  //element.classList.toggle("dark-mode");
-//}
 
+  var lightBulb = document.getElementById("lightBulb");
+  lightBulb.onclick = ()=>{
+    document.body.classList.toggle("dark-mode");
+    // lightBulb Icon change functionality
+    if(document.body.classList.contains("dark-mode")){
+      lightBulb.src = "./svgImages/darkModeSvg/sun.png";
+    } else {
+      lightBulb.src= "./svgImages/darkModeSvg/light-mobile-ui-basic-lamp-dark-mode-svgrepo-com.svg";
+    }
+
+  }
+
+  // Sliders and img changing Effects
 var slideIndex = 0;
 carousel();
 
