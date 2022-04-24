@@ -1,8 +1,8 @@
-/* * {
+ /* * {
     margin: 0;
     padding: 0;
-}*/
- 
+}
+ /* DarkMode style */
 :root {
     --primary-color: #fff;
     --secondary-color: rgba(00, 00, 00, 0.5);
@@ -30,12 +30,15 @@
     max-width:unset;
 max-height:unset;
 margin-left: unset;
-margin-right: auto;
+margin-right: unset;
 background-color:transparent;
 border:unset;
 border-radius: unset;
 padding-left: unset;
+display: flex;
 }
+
+/* DarkMode End + Icon */
 
 .top-header{ /* header link*/
     background-color: rgba(00, 00, 00, 0.3);
@@ -222,11 +225,130 @@ img {
     border-top: 0.5px dashed green;
 }
 
-.h4Not {
-    text-align: center;
-    font-family: 'Lobster';
-    padding-top: 15px;
-}
+/* vSlider Code by @CodingNepal(YouTube) */
+
+.wrapper .outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wrapper .card{
+      margin-top: 17rem;
+    background: rgba(255, 255, 255, 0.5);
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    justify-content: space-between;
+    border-radius: 100px 20px 20px 100px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    animation: animate 15s linear infinite;
+    animation-delay: calc(3s * var(--delay));
+  }
+
+  .outer:hover .card{
+    animation-play-state: paused;
+  }
+
+  .wrapper .card:last-child{
+    animation-delay: calc(-3s * var(--delay));
+  }
+
+  @keyframes animate {
+    0%{
+      opacity: 0;
+      transform: translateY(100%) scale(0.5);
+    }
+    5%, 20%{
+      opacity: 0.4;
+      transform: translateY(100%) scale(0.7);
+    }
+    25%, 40%{
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0%) scale(1);
+    }
+    45%, 60%{
+      opacity: 0.4;
+      transform: translateY(-100%) scale(0.7);
+    }
+    65%, 100%{
+      opacity: 0;
+      transform: translateY(-100%) scale(0.5);
+    }
+  }
+
+  .card .content{
+    display: flex;
+    align-items: center;
+  }
+
+  .wrapper .card .img{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 2px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+  }
+
+  .card .img img{
+
+    max-width: unset;
+    max-height: unset;
+    margin-left: unset;
+    margin-right: unset;
+    background-color:unset; /* a on this used to be 0.9*/
+    border:unset;
+    border-radius: unset;
+    padding:unset;
+      /**/
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .card .details{
+    margin-left: 90px;
+  }
+
+  .details span{
+      color: rgba(00, 00, 00, 0.9);
+    font-weight: 800;
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+
+  .draft {
+      color: rgba(00, 00, 00, 0.5);
+    font-size: 15px; /* draft +*/
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .card a{
+    text-decoration: none;
+    padding: 4px 5px;
+    margin-right: -0.4rem;
+    border-radius: 25px;
+    color: #fff;
+    background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100%);
+    transition: all 0.3s ease;
+  }
+
+  .card a:hover{
+    transform: scale(0.94);
+  }
+
+/* End of vSlider Code */
+
 /* Ads display box */
 .adsBox {
     width: 100%;
