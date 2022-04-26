@@ -7,14 +7,14 @@
     --primary-color: #fff;
     --secondary-color: rgba(00, 00, 00, 0.5);
     --border-primary: rgba(0, 0, 0, 0.9);
-  --top-headerCol:  rgb(168, 168, 168);
+    --top-headerCol:  rgba(168, 168, 168, 1);
  }
 
 .dark-mode {
     --primary-color: rgba(0, 0, 0, 0.7);
     --secondary-color: #fff;
     --border-primary: rgba(179, 0, 0, 0.9);
-  --top-headerCol: rgb(50, 50, 50);
+    --top-headerCol: rgb(50, 50, 50);
   }
 
   body {
@@ -43,7 +43,7 @@ display: flex;
 /* DarkMode End + Icon */
 
 .top-header{ /* header link*/
-    background-color: rgba(00, 00, 00, 0.3);
+    background-color: var(--top-headerCol);
     margin: -15px -7px 0px -7px;
     padding-top: 10px;
     position: fixed;
