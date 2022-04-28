@@ -1,35 +1,44 @@
- /* * {
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+} 
+/* Inclusion+ to make height responsive on device change*/
+html, body, main {
+  height:100%;
 }
- /* DarkMode style */
 :root {
-    --primary-color: #fff;
-    --secondary-color: rgba(00, 00, 00, 0.5);
-    --border-primary: rgba(0, 0, 0, 0.9);
-    --top-headerCol:  rgba(168, 168, 168, 1);
- }
+  height: 100%;
+}
+
+/* DarkMode style */
+
+:root {
+--primary-color: #fff;
+--secondary-color: rgba(00, 00, 00, 0.5);
+--border-primary: rgba(0, 0, 0, 0.9);
+--top-headerCol:  rgb(168, 168, 168);
+}
 
 .dark-mode {
-    --primary-color: rgba(0, 0, 0, 0.7);
-    --secondary-color: #fff;
-    --border-primary: rgba(179, 0, 0, 0.9);
-    --top-headerCol: rgb(50, 50, 50);
-  }
+--primary-color: rgba(0, 0, 0, 0.7);
+--secondary-color: #fff;
+--border-primary: rgba(179, 0, 0, 0.9);
+--top-headerCol: rgb(50, 50, 50);
+}
 
-  body {
-      background-color: var(--primary-color);
-      color: var(--secondary-color);
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 
 #lightBulb {
-    cursor: pointer;
-    width: 17px;
-    height: 17px;
-    float: right;
-    margin-top: -2.4rem;
-    max-width:unset;
+cursor: pointer;
+width: 17px;
+height: 17px;
+float: right;
+margin-top: -2.4rem;
+max-width:unset;
 max-height:unset;
 margin-left: unset;
 margin-right: unset;
@@ -43,410 +52,416 @@ display: flex;
 /* DarkMode End + Icon */
 
 .top-header{ /* header link*/
-    background-color: var(--top-headerCol);
-    margin: -15px -7px 0px -7px;
-    padding-top: 10px;
-    position: fixed;
-    width: 100%;
-    top: 0;
+background-color: var(--top-headerCol);
+padding-top: 10px;
+width: 100%;
+height: 5%; /* new Height % use stead rem */
+top: 0;
+
 }
 
 .logo { /* VAULTEX logo*/
-    margin: 12px 0px 0px -5px;
-    padding: 0px 0px 10px 30px;
-    font-family:'Times New Roman';
+margin: 0px 0px 0px -5px;
+padding: 0px 0px 10px 30px;
+font-family:'Times New Roman';
 }
 
 #vLogo { /* V char logo Id */
-    font-size: x-large;
-    font-family:   'Rubik Moonrocks', cursive;
-    color: rgba(00, 00, 00, 0.9);
-    margin-right: -4px;
+font-size: x-large;
+font-family:   'Rubik Moonrocks', cursive;
+color: rgba(00, 00, 00, 0.9);
+margin-right: -4px;
 }
 
 ul { /* navbar css*/
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    float: right;
-    top: 0;
-    overflow: hidden;
+list-style-type: none;
+margin: 0;
+padding: 0;
+float: right;
+top: 0;
+overflow: hidden;
 
 }
 ul, li { /* navbar Contd.*/
-    display: inline;
-    padding: 10px 0px 10px 0px;
-    margin: -2.7em 20px 0px 0px;
-    
+display: inline;
+padding: 10px 0px 10px 0px;
+margin: -2.7em 20px 0px 0px;
+
 }
 
 li, a {
-    text-decoration: none;
-    color: rgba(77, 0, 0, 0.9) ;
-    text-align: center;
+text-decoration: none;
+color: rgba(77, 0, 0, 0.9) ;
+text-align: center;
 
 
 }
 
- a:hover {
-    background-color: rgba(00, 00, 00, 0.3) ;
-    color: rgba(179, 0, 0, 0.9);
-    padding: 13px;
-    border-radius: 45%;
-    border: 0.5px solid rgba(179, 0, 0, 0.9);
+a:hover {
+background-color: rgba(00, 00, 00, 0.3) ;
+color: rgba(179, 0, 0, 0.9);
+padding: 13px;
+border-radius: 45%;
+border: 0.5px solid rgba(179, 0, 0, 0.9);
 }
 
 a:active {
-    background-color: rgba(00, 00, 00, 0.3) ;
-    padding: 13px;
-    border-radius: 45%;
+background-color: rgba(00, 00, 00, 0.3) ;
+padding: 13px;
+border-radius: 45%;
 }
 
 .sectionOne { /* SectionBlock*/
-    background-color: rgba(140, 115, 115, 0.4) ;
-    width: 80%;
-    height: 200px;
-    margin: 3rem 0px 0px -7px;
-    
+background-color: rgba(140, 115, 115, 0.4) ;
+width: 79.6%;
+height: 28.5%; /* Declared height in % --> change */
+margin: 0.1rem 0px 0px -0.4375rem;
+
 }
 
 .thinBlackBorder { /* thin borderline*/
-    border-style: solid;
-    border-width: 0px 0px 1px;
-    border-color: var(--border-primary);
+border-style: solid;
+border-width: 0px 0px 1px;
+border-color: var(--border-primary);
 }
 
 .vaultG {
-    float: left;
-    width: 33.3%;
-    height: inherit;
-    /*background-color: rgba(77, 0, 0, 0.9);*/
+float: left;
+width: 33.3%;
+height: inherit;
+/*background-color: rgba(77, 0, 0, 0.9);*/
 }
 
 .h3Align {
-    text-align: center;
+text-align: center;
 }
 
 h3{
-    margin-top: 1rem;
+margin-top: 1rem;
 }
 
 img {
-    max-width: 50%;
-    max-height: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(77, 0, 0, 0.1); /* a on this used to be 0.9*/
-    border: 1px dashed rgba(89, 108, 166, 0.9);
-    border-radius: 30%;
-    padding: 5px;
+max-width: 50%;
+max-height: 50%;
+margin-left: auto;
+margin-right: auto;
+background-color: rgba(77, 0, 0, 0.1); /* a on this used to be 0.9*/
+border: 1px dashed rgba(89, 108, 166, 0.9);
+border-radius: 30%;
+padding: 5px;
 
 }
 .vaultT {
-    width: 33.3%;
-    height: inherit;
-    /*background-color: rgba(54, 65, 99, 0.5);*/
-    float: left;
+width: 33.3%;
+height: inherit;
+/*background-color: rgba(54, 65, 99, 0.5);*/
+float: left;
 }
 
 .vaultF {
-    width: 33.3%;
-    height: inherit;
-    /*background-color: rgba(00, 00, 00, 0.5);*/
-    float: right;
+width: 33.3%;
+height: inherit;
+/*background-color: rgba(00, 00, 00, 0.5);*/
+float: right;
 }
 
 .sectionTwo { /* SectionBlock*/
-    background-color: rgba(89, 108, 166, 0.5) ;
-    width: 80%;
-    height: 200px;
-    margin: 0.15rem 0px 0px -7px;
-    
+background-color: rgba(89, 108, 166, 0.5);
+width: 79.6%;
+height: 28.5%;
+margin: 0.13rem 0px 0px -7px;
+
 }
 
 .arenaA {
-    float: left;
-    width: 33.3%;
-    height: inherit;
-    /*background-color: rgba(167, 63, 63, 0.4);*/
+float: left;
+width: 33.3%;
+height: inherit;
+/*background-color: rgba(167, 63, 63, 0.4);*/
 }
 
 .img2 {
-    background-color: rgba(00, 00, 00, 0.1);
+background-color: rgba(00, 00, 00, 0.1);
 
-    }
+}
 
 .arenaS {
-    float: left;
-    width: 33.3%;
-    height: inherit;
-    /*background-color: rgba(54, 65, 99, 0.5);*/
+float: left;
+width: 33.3%;
+height: inherit;
+/*background-color: rgba(54, 65, 99, 0.5);*/
 }
 
 .arenaSt {
-    float: right;
-    width: 33.3%;
-    height: inherit;
-    /*background-color: rgba(00, 00, 00, 0.9);*/
+float: right;
+width: 33.3%;
+height: inherit;
+/*background-color: rgba(00, 00, 00, 0.9);*/
 }
 
 .sectionThree { /* SectionBlock*/
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 80%;
-    height:200px;
-    margin: 0.13rem 0px 0px -7px;
-    
+background-color: rgba(0, 0, 0, 0.7);
+width: 79.6%;
+height: 28.5%;
+margin: 0.13rem 0px 0px -7px;
+
 }
 
 .asideBar {
-    height: 86.8%;
-    width: 20.5%;
-    position: fixed;
-    top: 3rem;
-    right: 0;
-    z-index: 1;
-    background-color: rgba(00, 00, 00, 0.6);
-    overflow-x: hidden ;
-    position: fixed;
-    border-style: solid;
-    border-width: 1.5px 1.5px 1.5px;
-    border-color: rgba(179, 0, 0, 0.9);
+height: 85.9%;
+width: 20.5%;
+position: fixed;
+top: 3.2rem;
+right: 0;
+z-index: 1;
+background-color: rgba(00, 00, 00, 0.6);
+overflow-x: hidden ;
+border-style: solid;
+border-width: 0.0938rem 0.0938rem 0.0938rem;
+border-color: rgba(179, 0, 0, 0.9);
 
 }
 .asideHeading {
-    text-align: center;
-    font-family:Lobster;
-    font-size: x-large;
-    color: rgba(77, 0, 0, 0.9);
-    margin-top: -2rem;
+text-align: center;
+font-family:Lobster;
+font-size: x-large;
+color: rgba(77, 0, 0, 0.9);
+margin-top: 0.2rem;
 }
 
- hr {
-    margin-top: -1.8rem;
-    width: 45%;
-    border-top: 0.5px dashed green;
+hr {
+margin-top: 0.15rem;
+width: 45%;
+border-top: 0.0313rem dashed green;
+margin-left: 25%;
 }
 
 /* vSlider Code by @CodingNepal(YouTube) */
 
 .wrapper .outer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+display: flex;
+align-items: center;
+justify-content: center;
+}
 
-  .wrapper .card{
-      margin-top: 17rem;
-    background: rgba(255, 255, 255, 0.5);
-    width: 250px;
-    display: flex;
-    align-items: center;
-    padding: 7px;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    justify-content: space-between;
-    border-radius: 100px 20px 20px 100px;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-    animation: animate 15s linear infinite;
-    animation-delay: calc(3s * var(--delay));
-  }
+.wrapper .card{
+  margin-top: 17rem;
+background: rgba(255, 255, 255, 0.5);
+width: 250px;
+display: flex;
+align-items: center;
+padding: 7px;
+opacity: 0;
+pointer-events: none;
+position: absolute;
+justify-content: space-between;
+border-radius: 100px 20px 20px 100px;
+box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+animation: animate 15s linear infinite;
+animation-delay: calc(3s * var(--delay));
+}
 
-  .outer:hover .card{
-    animation-play-state: paused;
-  }
+.outer:hover .card{
+animation-play-state: paused;
+}
 
-  .wrapper .card:last-child{
-    animation-delay: calc(-3s * var(--delay));
-  }
+.wrapper .card:last-child{
+animation-delay: calc(-3s * var(--delay));
+}
 
-  @keyframes animate {
-    0%{
-      opacity: 0;
-      transform: translateY(100%) scale(0.5);
-    }
-    5%, 20%{
-      opacity: 0.4;
-      transform: translateY(100%) scale(0.7);
-    }
-    25%, 40%{
-      opacity: 1;
-      pointer-events: auto;
-      transform: translateY(0%) scale(1);
-    }
-    45%, 60%{
-      opacity: 0.4;
-      transform: translateY(-100%) scale(0.7);
-    }
-    65%, 100%{
-      opacity: 0;
-      transform: translateY(-100%) scale(0.5);
-    }
-  }
+@keyframes animate {
+0%{
+  opacity: 0;
+  transform: translateY(100%) scale(0.5);
+}
+5%, 20%{
+  opacity: 0.4;
+  transform: translateY(100%) scale(0.7);
+}
+25%, 40%{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0%) scale(1);
+}
+45%, 60%{
+  opacity: 0.4;
+  transform: translateY(-100%) scale(0.7);
+}
+65%, 100%{
+  opacity: 0;
+  transform: translateY(-100%) scale(0.5);
+}
+}
 
-  .card .content{
-    display: flex;
-    align-items: center;
-  }
+.card .content{
+display: flex;
+align-items: center;
+}
 
-  .wrapper .card .img{
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    left: 2px;
-    background: #fff;
-    border-radius: 50%;
-    padding: 5px;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
-  }
+.wrapper .card .img{
+height: 30px;
+width: 30px;
+position: absolute;
+left: 2px;
+background: #fff;
+border-radius: 50%;
+padding: 5px;
+box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
 
-  .card .img img{
+.card .img img{
 
-    max-width: unset;
-    max-height: unset;
-    margin-left: unset;
-    margin-right: unset;
-    background-color:unset; /* a on this used to be 0.9*/
-    border:unset;
-    border-radius: unset;
-    padding:unset;
-      /**/
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-  }
+max-width: unset;
+max-height: unset;
+margin-left: unset;
+margin-right: unset;
+background-color:unset; /* a on this used to be 0.9*/
+border:unset;
+border-radius: unset;
+padding:unset;
+  /**/
+height: 100%;
+width: 100%;
+border-radius: 50%;
+object-fit: cover;
+}
 
-  .card .details{
-    margin-left: 90px;
-  }
+.card .details{
+margin-left: 90px;
+}
 
-  .details span{
-      color: rgba(00, 00, 00, 0.9);
-    font-weight: 800;
-    font-size: 15px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.details span{
+  color: rgba(00, 00, 00, 0.9);
+font-weight: 800;
+font-size: 15px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-  }
+}
 
-  .draft {
-      color: rgba(00, 00, 00, 0.5);
-    font-size: 15px; /* draft +*/
-    font-family: 'Times New Roman', Times, serif;
-  }
+.draft {
+  color: rgba(00, 00, 00, 0.5);
+font-size: 15px; /* draft +*/
+font-family: 'Times New Roman', Times, serif;
+}
 
-  .card a{
-    text-decoration: none;
-    padding: 4px 5px;
-    margin-right: -0.4rem;
-    border-radius: 25px;
-    color: #fff;
-    background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100%);
-    transition: all 0.3s ease;
-  }
+.card a{
+text-decoration: none;
+padding: 4px 5px;
+margin-right: -0.4rem;
+border-radius: 25px;
+color: #fff;
+background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100%);
+transition: all 0.3s ease;
+}
 
-  .card a:hover{
-    transform: scale(0.94);
-  }
+.card a:hover{
+transform: scale(0.94);
+}
 
 /* End of vSlider Code */
 
-/* Ads display box */
-.adsBox {
-    width: 100%;
-    height: 28.5% ;
-    background-color: rgba(0, 0, 0, 0.7);
-    bottom: 2.7rem;
-    position:fixed;
-}
+/* Ads display box */ /* Commented out-> unstable height on device change */
+/*.adsBox {
+width: 20.4%;
+height: 28.4% ;
+background-color: rgba(0, 0, 0, 0.7);
+bottom: 2.8rem;
+position:fixed;
+z-index: 1;
+right: 0;
+} */
 
 footer {
-    background-color: rgba(77, 0, 0, 0.9) ;
-    width: 100%;
-    height: 38px;
-    left: 0;
-    bottom: 0;
-    position: fixed;
-    border-style: solid;
-    border-width: 1.5px 0px 0px;
-    border-color: rgba(179, 0, 0, 0.9);
+background-color: rgba(77, 0, 0, 0.9) ;
+width: 100%;
+height: 5.7%;
+left: 0;
+bottom: 0;
+position: fixed;
+border-style: solid;
+border-width: 1.5px 0px 0px;
+border-color: rgba(179, 0, 0, 0.9);
 }
 
 .fa {
-    float: right;
-    padding: 5px;
-    margin-top: 0.3rem;
-    font-size: 20px;
-    width: 15px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-  .favShift{
-      margin-right: 11.7rem;
-  }
+float: right;
+padding: 5px;
+margin-top: 0.3rem;
+font-size: 20px;
+width: 15px;
+text-align: center;
+text-decoration: none;
+border-radius: 50%;
+}
+.favShift{
+  margin-right: 11.7rem;
+}
 
-  .fa:hover {
-    background-color: rgba(00, 00, 00, 0.3);
-    color: #FFF;
-    padding: 8px;
-  }
+.fa:hover {
+background-color: rgba(00, 00, 00, 0.3);
+color: #FFF;
+padding: 8px;
+}
 
-  /* Twitter */
+/* Twitter */
 .fa-twitter {
+color: #FFF;
+}
+
+/* Telegram*/
+.fa-telegram {
+  color: #FFF;
+}
+
+/* Instagram*/
+.fa-instagram {
+color: white;
+}
+
+.fa-facebook {
+color: #FFF;
+}
+
+.copyright {
     color: #FFF;
-  }
+    margin-top: 0.9rem;
+    margin-left: 2rem;
+}
 
-  /* Telegram*/
-  .fa-telegram {
-      color: #FFF;
-    }
+.footerNav {
+    bottom: 0;
+    float: left;
+    margin-left: 35%;
+    padding-right: -20px;
+    padding-top: 25px;
+}
 
-  /* Instagram*/
-  .fa-instagram {
-    color: white;
-    }
+.footerNav li {
+    border-right:1px solid #FFF;
+    padding-right: 10px;
+    font-size: small;
+    font-family: inherit;
+}
 
-    .fa-facebook {
+.footerNav li:last-child {
+    border-right: none;
+}
+ .footerNav a {
     color: #FFF;
-    }
+    text-align: center;
+}
 
-    .copyright {
-        color: #FFF;
-        margin-top: 0.9rem;
-        margin-left: 2rem;
-    }
+.footerNav a:hover {
+    background-color:inherit;
+    color: #FFF;
+    padding: 0px;
+    border: none;
+}
 
-    .footerNav {
-        bottom: 0;
-        float: left;
-        margin-left: 35%;
-        padding-right: -20px;
-        padding-top: 3px;
-    }
+/* RWD @Media Starts here*/
 
-    .footerNav li {
-        border-right:1px solid #FFF;
-        padding-right: 10px;
-        font-size: small;
-        font-family: inherit;
-    }
 
-    .footerNav li:last-child {
-        border-right: none;
-    }
-     .footerNav a {
-        color: #FFF;
-        text-align: center;
-    }
 
-    .footerNav a:hover {
-        background-color:inherit;
-        color: #FFF;
-        padding: 0px;
-        border: none;
-    }
-    .mySlides {display:none;}/* Doesn't seem to be necessary as code works fine without-- but just leave in good practice*/
-    .mySlides0 {display:none;}
-
-    
+/*RWD @media Ends here */
+.mySlides {display:none;}/* Doesn't seem to be necessary as code works fine without-- but just leave in good practice*/
+.mySlides0 {display:none;}
