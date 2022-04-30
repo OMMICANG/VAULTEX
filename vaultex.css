@@ -114,7 +114,7 @@ border-radius: 45%;
 .sectionOne { /* SectionBlock*/
 background-color: rgba(140, 115, 115, 0.4) ;
 width: 79.6%;
-height: 28.5%; /* Declared height in % --> change */
+height: 28.5%;
 margin: 0.1rem 0px 0px -0.4375rem;
 
 }
@@ -245,7 +245,7 @@ justify-content: center;
 }
 
 .wrapper .card{
-  margin-top: 17rem;
+margin-top: 17rem;
 background: rgba(255, 255, 255, 0.5);
 width: 250px;
 display: flex;
@@ -458,10 +458,6 @@ color: #FFF;
     border: none;
 }
 
-/* RWD @Media Starts here*/
 
-
-
-/*RWD @media Ends here */
 .mySlides {display:none;}/* Doesn't seem to be necessary as code works fine without-- but just leave in good practice*/
 .mySlides0 {display:none;}
