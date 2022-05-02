@@ -1,3 +1,78 @@
+/* Hmenu Starts Here: Credits(@Devggaura :)) */
+
+@media screen and (max-width: 500px){
+
+  #lightBulb {
+    cursor: pointer;
+    width: 19px;
+    height: 17px;
+    float: right;
+    margin-top: -0.5rem;
+    max-width:unset;
+    max-height:unset;
+    margin-left: unset;
+    margin-right: unset;
+    background-color:transparent;
+    border:unset;
+    border-radius: unset;
+    padding-left: unset;
+    display: flex;
+    }
+
+  .navMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    right: -100%;
+    top: 6rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 50%;
+    height: 75%;
+    border-radius: 10px;
+    text-align: right;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.5);
+    float: none;
+  }
+
+  .navMenu.active{
+    right: -2rem;
+  }
+
+  .navItem {
+    margin: 1rem 0;
+  }
+
+  .Hmenu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .Hmenu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .Hmenu.Hmenu.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .Hmenu.Hmenu.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+
+}
+
+/*Hmenu Ends here */
+ 
+ 
+ 
+
+ 
  /* RWD @Media Starts here*/
 
 
