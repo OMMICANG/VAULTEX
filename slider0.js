@@ -115,15 +115,16 @@ const navA = document.querySelector(".navLink");
 
 hamburger.addEventListener("click", mobileMenu);
 navA.forEach(n=> n.addEventListener("click", closeMenu));
-
 function mobileMenu() {
      hamburger.classList.toggle("active");
       navUl.classList.toggle("active");
 
-      function closeMenu() {
-        hamburger.classList.remove("active")
-        navUl.classList.remove("active");
-      }
+}
+
+function closeMenu() {
+  hamburger.classList.remove("active")
+  navUl.classList.remove("active");
+
 }
 
 

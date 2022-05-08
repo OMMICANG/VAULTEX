@@ -448,7 +448,8 @@ color: #FFF;
 }
 
 .footerNav {
-    bottom: 0;
+    margin-top: -3rem ;
+
     float: left;
     margin-left: 35%;
     padding-right: -20px;
@@ -456,6 +457,7 @@ color: #FFF;
 }
 
 .footerNav li {
+    display: inline;
     border-right:1px solid #FFF;
     padding-right: 10px;
     font-size: small;
