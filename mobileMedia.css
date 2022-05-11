@@ -1,6 +1,5 @@
 /* Hmenu Starts Here: Credits(@Devggaura :)) */
 
-
 @media only screen and (max-width: 600px){
 
   #lightBulb {
@@ -29,6 +28,7 @@
     top: 6rem;
     flex-direction: column;
     background-color: #fff;
+    z-index: 2;
     width: 50%;
     height: 75%;
     border-radius: 10px;
@@ -46,6 +46,47 @@
     margin: 1rem 0;
 
   }
+
+  /* Timer popUp Starts Here */
+
+#popUp {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 50%;
+  height: 6.5%;
+  font-size: smaller;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  margin-left: 30%;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+
+#Yes {
+  margin-top: 1.3rem;
+  border: 0.5px solid;
+  border-radius: 20%;
+  cursor: pointer;
+  margin-left: -8.5rem;
+  padding: 1px;
+}
+
+#No {
+  margin-top: 1.3rem;
+  border: 0.5px solid;
+  border-radius: 20%;
+  cursor: pointer;
+  padding: 1px;
+}
+
+#Yes:hover, #No:hover {
+  background-color: var(--top-headerCol) ;
+  color: var(--border-primary);
+}
+
+/* Timer popUp Ends Here */
 
   .Hmenu {
     display: block;

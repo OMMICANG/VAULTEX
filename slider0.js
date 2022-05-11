@@ -107,6 +107,52 @@ x[slideIndex4-1].style.display = "block";
 setTimeout(carousel4, 2000); 
 }
 
+// BGmusic Starts Here
+var timer = setInterval(() => {
+document.getElementById("popUp").style.display = "flex";
+
+var getMusic= document.getElementById("Yes");
+var cancel=  document.getElementById("No");
+
+if(getMusic){
+getMusic.onclick = ()=>{
+  musicPlay();
+  clearInterval(timer);
+  document.getElementById("popUp").style.display = "none";
+}
+} if(cancel) { // else if doesn't seem to work
+cancel.onclick = ()=>{
+  
+  clearInterval(timer);
+  document.getElementById("popUp").style.display = "none";
+  }
+}else {
+  document.getElementById("popUp").style.display = "none";
+
+}
+  
+}, 3000);
+
+
+
+// PART B
+
+function musicPlay() {
+  document.getElementById('ID').play();
+}
+
+function musicStop() {
+var reset = document.getElementById('ID');
+reset.pause();
+if (reset.pause()){
+  reset.play(); // Prev issue solved reset code credits @adeneo (Stack)
+}
+  else{
+    reset.currentTime = 0;
+  }
+} 
+// BGmusic Ends Here
+
 // HMENU STARTS HERE : Credits(@Devggaura :))
 
 const hamburger = document.querySelector(".Hmenu");
@@ -126,6 +172,5 @@ function closeMenu() {
   navUl.classList.remove("active");
 
 }
-
 
 // HMENU ENDS HERE

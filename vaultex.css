@@ -49,6 +49,47 @@ padding-left: unset;
 display: flex;
 }
 
+/* Timer popUp Starts Here */
+
+#popUp {
+display: none;
+position: fixed;
+top: 0;
+width: 25%;
+height: 7%;
+background-color: rgba(0, 0, 0, 0.1);
+z-index: 1;
+margin-left: 35%;
+justify-content: center;
+overflow: hidden;
+
+}
+
+#Yes {
+margin-top: 1.3rem;
+border: 0.5px solid;
+border-radius: 20%;
+cursor: pointer;
+margin-left: -10rem;
+padding: 2px;
+}
+
+#No {
+margin-top: 1.3rem;
+border: 0.5px solid;
+border-radius: 20%;
+cursor: pointer;
+padding: 2px;
+
+}
+
+#Yes:hover, #No:hover {
+background-color: var(--top-headerCol) ;
+color: var(--border-primary);
+}
+
+/* Timer popUp Ends Here */
+
 /* Hmenu Starts Here : Credits(@Devggaura :)) */
 .Hmenu {
 margin-top: -2.3rem;
