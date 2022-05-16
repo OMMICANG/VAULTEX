@@ -144,6 +144,29 @@
       
     } */
 
+    #searchInput {
+      display: flex;
+      position: fixed;
+      border: 1px solid #000;
+      width: 30%;
+      height: 3%;
+      top: 0;
+      float: unset;
+      margin: 0.5rem 0rem 0rem 30%;
+      padding: 1px;
+      padding-left: 10px ;
+      font-size: small;
+    
+      border-radius: 5%;
+    
+    }
+
+    #searchInput:active {
+      background-color: rgba(0, 0, 0, 0.1);
+      color: #FFF;
+
+    }
+
     .sectionOne { /* SectionBlock*/
       background-color: rgba(140, 115, 115, 0.4) ;
       width: 100%;
@@ -210,6 +233,28 @@
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
+  }
+
+  /* Search Button starts Here*/
+  .fa-search {
+    display: flex;
+    position: fixed;
+    float: unset;
+    top: 0;
+    margin: 0.6rem 0rem 0rem 58%;
+    padding: 2px;
+    border: none;
+    border-radius: unset;
+    background-color: transparent;
+    
+  }
+  
+  .fa.fa-search:hover {
+    background-color: unset;
+    padding: unset;
+    cursor: pointer;
+    color: #000;
+  
   }
 
   .favShift{
